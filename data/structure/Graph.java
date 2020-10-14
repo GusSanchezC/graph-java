@@ -166,7 +166,7 @@ public class Graph {
     public static void main(String[] args) {
         Graph graph = new Graph(false);
 
-        Vertex LaPaz = new Vertex("La Paz");
+        /*Vertex LaPaz = new Vertex("La Paz");
         Vertex Cochabamba = new Vertex("Cochabamba");
         Vertex SantaCruz = new Vertex("Santa Cruz");
         Vertex Riberalta = new Vertex("Riberalta");
@@ -178,8 +178,10 @@ public class Graph {
         graph.addVertex(LaPaz);
         graph.addVertex(Cochabamba);
         graph.addVertex(SantaCruz);
-        graph.addVertex(Riberalta);
+        graph.addVertex(Riberalta);*/
 
-        graph.readFileInput("bolivia.txt");
+        graph.readFileInput("test.txt");
+        graph.printGraph();
+        graph.BFS(graph.getVertexList().getHead().getData());
     }
 }
